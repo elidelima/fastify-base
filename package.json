@@ -1,0 +1,31 @@
+{
+  "name": "fastify-base",
+  "version": "1.0.0",
+  "description": "Boilerplate project using Fastify",
+  "main": "app.js",
+  "scripts": {
+    "build": "rm -rf ./dist && tsc --p ./tsconfig.json",
+    "start": "node dist/app.js",
+    "lint": "tslint -p tsconfig.json",
+    "dev": "nodemon -e ts --exec \" ts-node ./src/app.ts \"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "fastify"
+  ],
+  "author": "Eli de Lima",
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^2.12.1",
+    "fastify-autoload": "^1.2.2",
+    "fastify-decorators": "^2.0.0-4",
+    "fastify-oas": "2.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^13.9.0",
+    "nodemon": "^2.0.2",
+    "ts-node": "^8.6.2",
+    "tslint": "^6.0.0",
+    "typescript": "^3.8.3"
+  }
+}
